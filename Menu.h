@@ -3,12 +3,20 @@
 
 
 enum Menu {
-	hotItem1,
-	hotItem2,
-	hotItem3,
-	coldItem1,
-	coldItem2,
-	coldItem3
+	pizza,
+	zapiekanka,
+	stripsy,
+	chipsy,
+	paluszki,
+	banan,
+	woda,
+	pepsi,
+	sok,
+	longIsland,
+	Mohito,
+	Perla
+	//wzialem to po 3 i zgrupowalem 'typami'
+
 };
 
 #endif  //_MENU_H

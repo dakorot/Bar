@@ -1,17 +1,21 @@
 #if !defined(_DATABASE_H)
 #define _DATABASE_H
 
+#include <vector>
+
 #include "Client.h"
 #include "BookingSchedule.h"
+#include "LoyaltyCard.h"
 
 class Database {
-public:
-	Client clients;
+private:
+	std::vector<Client*> clients;
 	BookingSchedule* schedule;
-	void saveClient();
-	void attachLoyaltyCard();
+public:
+	void saveClient(Client* newClient);
+	void attachLoyaltyCard(Client * client, LoyaltyCard* newLoyaltyCard);
 	void saveChanges();
-	Database(BookingSchedule schedule);
+	Database(BookingSchedule* schedule);
 };
 
 #endif  //_DATABASE_H
